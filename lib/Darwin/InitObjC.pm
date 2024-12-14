@@ -11,9 +11,12 @@ sub init {
     DynaLoader::dl_load_file("/System/Library/Frameworks/Foundation.framework/Foundation");
 }
 
+my $maybe_init;
+
 sub maybe_init {
-    if ($^O eq "darwin" && $Config::Config{perlpath} eq "/usr/bin/perl") {
+    if (!$maybe_init && $^O eq "darwin" && $Config::Config{perlpath} eq "/usr/bin/perl") {
         init();
+        $maybe_init = 1;
     }
 }
 
