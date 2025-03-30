@@ -14,10 +14,11 @@ sub init {
 my $maybe_init;
 
 sub maybe_init {
-    if (!$maybe_init && $^O eq "darwin" && $Config::Config{perlpath} eq "/usr/bin/perl") {
+    return if $maybe_init;
+    if ($^O eq "darwin" && $Config::Config{perlpath} eq "/usr/bin/perl") {
         init();
-        $maybe_init = 1;
     }
+    $maybe_init = 1;
 }
 
 1;
