@@ -1,5 +1,3 @@
-[![Actions Status](https://github.com/skaji/perl-Darwin-InitObjC/actions/workflows/test.yml/badge.svg)](https://github.com/skaji/perl-Darwin-InitObjC/actions)
-
 # NAME
 
 Darwin::InitObjC - initializes Objective-C runtime
@@ -32,6 +30,13 @@ A workaround is to initilize Objective-C runtime before calling fork(2).
 # SEE ALSO
 
 https://bugs.ruby-lang.org/issues/14009
+
+# ARTIFACT ATTESTATIONS
+
+GitHub Artifact Attestations are generated for release tarballs uploaded to
+CPAN. If you care about provenance for the uploaded tarballs, see:
+
+[https://github.com/skaji/perl-Darwin-InitObjC/attestations](https://github.com/skaji/perl-Darwin-InitObjC/attestations)
 
 # COPYRIGHT AND LICENSE
 
