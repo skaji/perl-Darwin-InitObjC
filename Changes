@@ -1,6 +1,7 @@
 Revision history for Darwin-InitObjC
 
 {{$NEXT}}
+  - Raise minimum Perl to v5.24
 
 0.001  2025-04-05 15:26:50 JST
   - Initial version
